@@ -1,0 +1,6 @@
+<h1><%= @flat.name %></h1>
+<h1><%= @flat.address %></h1>
+<h1><%= @flat.description %></h1>
+<%= link_to "Edit this flat", edit_flat_path %>
+<%= link_to "Back to flats", flats_path %>
+<%= link_to "Delete", flat_path(@flat), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%>
